@@ -1,0 +1,46 @@
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <div class=container>
+        <h1>Big muted indicator icon</h1>
+        <p><strong>Panda Video Examples</strong></p>
+        <!-- If you have a landing page and you want to autoplay a video, it's mandatory to autoplay muted due
+            to browser restriction [1]. User must interact with the page in order to listen to the audio.
+            In this case, we've come up with a solution to show a very large indicator saying the user must press the button/icon.
+            You can customize text and colors.
+
+            [1]: https://developer.chrome.com/blog/autoplay
+        --->
+
+        <div class="row">
+            <div class="col-lg">
+                <div style="position:relative;padding-top:56.25%;"><iframe id="panda-player" src="https://player-vz-ded14ebd-85a.tv.pandavideo.com.br/embed/?v=3b101f05-84aa-4de0-9b64-71f1855388af&muted=true&autoplay=true&mutedIndicatorIcon=true&mutedIndicatorTextTop=Click here to unmute&mutedIndicatorTextBottom=Click here to unmute&saveProgress=false&mutedIndicatorClickRestart=true&controls=play-large" style="border:none;position:absolute;top:0;height:100%;width:100%" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" allowfullscreen=true></iframe></div>
+            </div>
+            <div class="col">
+                <h5>Player embed options:</h5>
+                <ul>
+                    <li><strong>autoplay</strong> = true</li>
+                    <li><strong>muted</strong> = true</li>
+                    <li><strong>mutedIndicatorIcon</strong> = true</li>
+                    <li><strong>mutedIndicatorClickRestart</strong> = true</li>
+                    <li><strong>mutedIndicatorTextTop</strong> = Click here to unmute</li>
+                    <li><strong>mutedIndicatorTextBottom</strong> = Click here to unmute</li>
+                    <li><strong>saveProgress</strong> = false</li>
+                    <li><strong>controls</strong> = play-large</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <h5>When should I use this?</h5>
+            <blockquote>
+                <ul>
+                    <li>Landing pages where you want to sell a product and not distract users</li>
+                </ul>
+            </blockquote>
+        </div>
+    </div>
+</body>
+
+</html>
